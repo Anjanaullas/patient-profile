@@ -13,3 +13,8 @@ class PatientViewSet(viewsets.ModelViewSet):
 class AppointmentViewSet(viewsets.ModelViewSet):
     queryset = Appointment.objects.all()
     serializer_class = AppointmentSerializer
+
+from django.shortcuts import render
+
+def frontend(request):
+    return render(request, 'index.html')  # points to React's index.html
