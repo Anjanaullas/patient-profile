@@ -5,9 +5,7 @@ const API = axios.create({
 });
 
 export const getDoctors = () => API.get('doctors/');
-export const createDoctor = (data) => API.post('doctors/', data);
-
 export const getPatients = () => API.get('patients/');
 export const createPatient = (data) => API.post('patients/', data);
-
+export const getAppointments = () => API.get('appointments/');
 export const createAppointment = (data) => API.post('appointments/', data);
